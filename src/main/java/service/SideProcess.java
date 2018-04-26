@@ -13,13 +13,6 @@ public class SideProcess implements Runnable {
 
     @Override
     public void run() {
-/*
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-*/
         queue.add(new Element(1, 1));
         queue.add(new Element(2, 1));
         queue.add(new Element(3, 1));
@@ -31,26 +24,10 @@ public class SideProcess implements Runnable {
         queue.add(new Element(9, 1));
         queue.add(new Element(1, 2));
         queue.add(new Element(2, 2));
-/*
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-*/
         queue.add(new Element(11, 1));
         queue.add(new Element(1, 3));
         queue.add(new Element(3, 2));
-/*
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-*/
         queue.add(new Element(2, 3));
         queue.add(new Element(15, 1));
-
-
     }
 }
